@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Fazendo erdice theme.
+ */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function opauwlo_theme_suggestions_input_alter(array &$suggestions, array $variables): void {
+  if (isset($variables['element']['#attributes']['class'])) {
+    if (in_array("button--submit", $variables['element']['#attributes']['class'])) {
+      $suggestions[] = 'input__button__submit';
+    }
+  }
+}

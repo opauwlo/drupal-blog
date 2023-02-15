@@ -1,0 +1,22 @@
+uuid: 37a353f8-f61f-4d07-bc9d-797f0f15782f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - opauwlo
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: opauwlo_breadcrumbs
+theme: opauwlo
+region: menu
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

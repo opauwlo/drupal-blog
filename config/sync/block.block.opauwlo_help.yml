@@ -1,0 +1,22 @@
+uuid: eb0375bc-e6a1-41b0-b54a-9a24097fc350
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - opauwlo
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: opauwlo_help
+theme: opauwlo
+region: menu
+weight: 1
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

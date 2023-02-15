@@ -1,0 +1,22 @@
+uuid: e3d15904-1215-4a28-82c4-f1b3de6060bc
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - opauwlo
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: opauwlo_powered
+theme: opauwlo
+region: menu
+weight: 2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

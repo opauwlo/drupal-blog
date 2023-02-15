@@ -1,0 +1,28 @@
+{# {% set site_name = drupal_config('system.site', 'name') %} #}
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar p-1 mb-5 bg-dark text-light" id="mainNav">
+  <div class="container-fluid px-4 px-lg-5 text-light">
+    <a class="navbar-brand text-light" href="/">
+      {{ site_name }}
+    </a>
+    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars text-light"></i>
+    </button>
+    <div class="collapse navbar-collapse text-light" id="navbarResponsive">
+      {{ page.menu }}
+      {{ page.search }}
+    </div>
+  </div>
+</nav>
+
+<section class="search-results">
+  <div class="container position-relative px-4 mt-5 px-lg-5 article-preview">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ page.footer_first }}

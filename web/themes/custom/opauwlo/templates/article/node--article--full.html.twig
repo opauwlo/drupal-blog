@@ -1,0 +1,37 @@
+{% set layout = layout ? 'layout--' ~ layout|clean_class %}
+{# {% set banner_url =  content.field_post_banner.0['#item']|file_url %} #}
+{% set field_date = content.date.0 %}
+<!-- Page Header-->
+{{dump()}}
+<header class="masthead bg-dark" style="background-image: url({{banner_url}})">
+
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading">
+          <h1>{{label}}</h1>
+          <h2 class="subheading">{{content.field_summary}}</h2>
+          <span class="meta" >
+            Posted by {{ author_name }} on {{ field_date|date("F j, Y") }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Post Content-->
+<article class="mb-4 not-overflow-text" style="font-size: 1.125rem !important;">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7 not-overflow-text">
+        {{ content.body|raw }}
+
+        {% if content.field_post_comment %}
+          <div id="comments" class="{{ layout }} mt-4">
+            {{ content.field_post_comment }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

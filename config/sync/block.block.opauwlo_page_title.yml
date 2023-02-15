@@ -1,0 +1,20 @@
+uuid: 6238c3d7-58cb-4bde-b546-41071aea9534
+langcode: en
+status: false
+dependencies:
+  theme:
+    - opauwlo
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: opauwlo_page_title
+theme: opauwlo
+region: menu
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

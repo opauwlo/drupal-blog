@@ -1,0 +1,22 @@
+uuid: 7c41266b-6b9a-4b96-a89a-89a3be9bdc51
+langcode: en
+status: false
+dependencies:
+  theme:
+    - opauwlo
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: opauwlo_primary_local_tasks
+theme: opauwlo
+region: menu
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

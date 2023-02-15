@@ -1,0 +1,10 @@
+global:
+  css:
+    theme:
+      css/styles.css: {}
+      css/highlight: {}
+  js:
+    js/scripts.js: {}
+    js/bootstrap.min.js: {}
+    js/highlight.js: {}
+

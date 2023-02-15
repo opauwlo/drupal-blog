@@ -1,0 +1,23 @@
+uuid: 3ca64a8a-6e8a-4344-94b1-ca4919274dfd
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - opauwlo
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: opauwlo_syndicate
+theme: opauwlo
+region: menu
+weight: 3
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
