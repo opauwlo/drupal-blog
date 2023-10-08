@@ -18,8 +18,17 @@
           <div class="post-preview">
             <a href="{{ url }}">
               <h2 class="post-title">{{ label }}</h2>
-              <h3 class="post-subtitle fs-5">{{ content.field_summary|without('field_post_banner', 'links') }}</h3>
+              <h3 class="post-subtitle fs-5 m-2">{{ content.field_summary|raw }}</h3>
             </a>
+            {# render tags #}
+            {% if content.field_tags|render %}
+              <div class="post-tags m-1 d-flex flex-wrap">
+                {% for tag in content.field_tags %}
+                  <a href="{{ tag['#url'] }}" class="badge bg-secondary rounded-2 text-decoration-none text-white m-1">{{ tag['#title'] }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+            {# render author #}
             <p class="post-meta">Posted by
               <a href="#">{{ author_name }}</a>
               on {{ field_date|date("F j, Y") }}</p>

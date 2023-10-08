@@ -10,6 +10,12 @@
  * @see template_preprocess_form()
  */
 #}
-<form role="search" {{ attributes.addClass('d-flex me-2 my-3 mb-sm-3 mb-3 ') }}>
-  {{ children }}
-</form>
+  <form role="search" {{ attributes.addClass('d-flex me-2 my-3 mb-sm-3 mb-3 ') }}>
+    {% if attributes.hasClass('comment-articles-comments-form') %}
+      <div class="input-group">
+        {{ children }}
+      </div>
+    {% else %}
+      {{ children }}
+    {% endif %}
+  </form>

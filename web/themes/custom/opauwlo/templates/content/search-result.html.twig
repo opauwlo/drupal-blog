@@ -57,12 +57,20 @@
  */
 #}
 {% set field_date = info_split.date.0 %}
-
+{% set content = result.node %}
+{% set tags = drupal_field('field_tags', 'node', content.id) %}
 <div class="post-preview">
   <a href="{{ url }}">
     <h2 class="post-title">{{ title }}</h2>
-    <h3 class="post-subtitle fs-5">{{ node }}</h3>
+   <h3 class="post-subtitle fs-5 m-2">{{  content.field_summary.value|raw }}</h3>
   </a>
+  {% if tags|render %}
+    <div class="post-tags m-1 d-flex flex-wrap">
+      {% for tag in tags %}
+        <a href="{{ tag['#url'] }}" class="badge bg-secondary rounded-2 text-decoration-none text-white m-1">{{ tag['#title'] }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
   <p class="post-meta">Posted by
     <a href="#">{{ info_split.user }}</a>
     on {{ field_date|date('M d, y') }}</p>

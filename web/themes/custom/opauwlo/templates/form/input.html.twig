@@ -1,7 +1,7 @@
 {% set inputType = attributes.type|render %}
 {%
   set classes = [
-    inputType == 'submit' ? 'btn btn-success fw-bold text-light' : 'form-control',
+    inputType == 'submit' ? 'btn btn-success fw-bold text-light inline-block' : 'form-control',
   ]
 %}
 <input{{ attributes.addClass(classes) }} />{{ children }}

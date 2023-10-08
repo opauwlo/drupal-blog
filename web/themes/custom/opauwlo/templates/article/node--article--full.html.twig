@@ -1,10 +1,7 @@
-{% set layout = layout ? 'layout--' ~ layout|clean_class %}
-{# {% set banner_url =  content.field_post_banner.0['#item']|file_url %} #}
+{% set banner_url =  content.field_image['#items']|file_url %}
 {% set field_date = content.date.0 %}
 <!-- Page Header-->
-{{dump()}}
 <header class="masthead bg-dark" style="background-image: url({{banner_url}})">
-
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
@@ -26,12 +23,23 @@
       <div class="col-md-10 col-lg-8 col-xl-7 not-overflow-text">
         {{ content.body|raw }}
 
-        {% if content.field_post_comment %}
-          <div id="comments" class="{{ layout }} mt-4">
-            {{ content.field_post_comment }}
-          </div>
-        {% endif %}
       </div>
     </div>
   </div>
 </article>
+<div class="container bootstrap snippets bootdey">
+  <div class="row">
+		<div class="col-md-12">
+		  <div class="blog-comment">
+				<h3 class="text-success">Comments</h3>
+        <hr/>
+        <div id="comments" class="{{ layout }} mt-3">
+            {{ content.field_comments.0.comment_form }}
+				  <ul class="comments">
+            {{ content.field_comments.0.comments }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
