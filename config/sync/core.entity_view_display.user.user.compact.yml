@@ -1,11 +1,10 @@
-uuid: 10d5b015-ccaf-458c-ad3a-3d822591c9e9
+uuid: 58e08e85-0a3b-4e65-a808-de5a6d717f72
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
     - image
     - user
@@ -17,13 +16,10 @@ bundle: user
 mode: compact
 content:
   user_picture:
-    type: image
+    type: image_url
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: content
-      image_loading:
-        attribute: lazy
+      image_style: ''
     third_party_settings: {  }
     weight: 0
     region: content

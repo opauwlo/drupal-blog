@@ -1,4 +1,4 @@
-uuid: 3ca64a8a-6e8a-4344-94b1-ca4919274dfd
+uuid: c869e7ed-226a-484c-8b11-0f3345f980b6
 langcode: en
 status: false
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
 id: opauwlo_syndicate
 theme: opauwlo
-region: menu
-weight: 3
+region: content
+weight: -6
 provider: null
 plugin: node_syndicate_block
 settings:

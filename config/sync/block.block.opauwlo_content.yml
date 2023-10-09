@@ -1,4 +1,4 @@
-uuid: 82461202-70c8-421a-ba53-b25cb21c4b73
+uuid: 3fbd8d81-7847-4f59-a3d1-564456e22a80
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: opauwlo_content
 theme: opauwlo
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: system_main_block
 settings:

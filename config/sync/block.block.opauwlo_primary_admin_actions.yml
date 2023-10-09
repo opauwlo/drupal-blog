@@ -1,4 +1,4 @@
-uuid: 8053c18c-bb35-4411-accf-18f70641e28f
+uuid: c0bfe7b8-3a22-48d1-8ecb-7607e781ec97
 langcode: en
 status: false
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: opauwlo_primary_admin_actions
 theme: opauwlo
 region: menu
-weight: -5
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:

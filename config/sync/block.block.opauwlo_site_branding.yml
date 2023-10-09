@@ -1,4 +1,4 @@
-uuid: a5d20e4d-02a6-4eb9-bc36-eeaaeb55a8ea
+uuid: 036b7974-739a-4fe8-b363-c60bcd06a69d
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: opauwlo_site_branding
 theme: opauwlo
 region: header
-weight: 0
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,10 +1,9 @@
-uuid: 8cadd7c0-9b0c-4258-913b-aceffcc75fff
+uuid: 1d442215-7bae-4a36-a60d-1ec0e526157b
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
     - image
     - user
@@ -15,18 +14,13 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
-    weight: 5
-    region: content
   user_picture:
-    type: image
+    type: image_url
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: content
-      image_loading:
-        attribute: lazy
+      image_style: ''
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  member_for: true

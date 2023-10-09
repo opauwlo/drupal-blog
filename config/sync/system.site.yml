@@ -1,14 +1,14 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 418a0329-567d-43f1-b8a2-3afb866d27c6
-name: 'Drush Site-Install'
-mail: admin@example.com
+uuid: 571919ad-3503-464e-a083-6eb0f7b93bf9
+name: opauwlo
+mail: costap253@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

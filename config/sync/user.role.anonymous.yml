@@ -1,14 +1,14 @@
-uuid: ed2a8995-0060-44e2-938b-c41c5551b292
+uuid: 5161b1a6-04f3-491b-beb4-67607dd71c89
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.restricted_html
+    - rest.resource.comments
+    - rest.resource.me
   module:
     - comment
-    - contact
-    - filter
-    - media
+    - eu_cookie_compliance
+    - rest
     - search
     - system
 _core:
@@ -20,7 +20,11 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'display eu cookie compliance popup'
+  - 'post comments'
+  - 'restful get comments'
+  - 'restful get me'
+  - 'restful post comments'
   - 'search content'
-  - 'use text format restricted_html'
-  - 'view media'
+  - 'skip comment approval'

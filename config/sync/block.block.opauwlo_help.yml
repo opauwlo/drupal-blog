@@ -1,4 +1,4 @@
-uuid: eb0375bc-e6a1-41b0-b54a-9a24097fc350
+uuid: 0e51d386-8b4a-4e19-a329-b0c098a9cc70
 langcode: en
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: opauwlo_help
 theme: opauwlo
 region: menu
-weight: 1
+weight: -4
 provider: null
 plugin: help_block
 settings:

@@ -1,4 +1,4 @@
-uuid: eb50a573-e9f1-4a8e-a148-ae44feadb44a
+uuid: 0934f0fb-60da-4eab-8807-16991f7328de
 langcode: en
 status: true
 dependencies: {  }
@@ -8,22 +8,12 @@ name: 'Plain text'
 format: plain_text
 weight: 10
 filters:
-  filter_html_escape:
-    id: filter_html_escape
+  filter_html:
+    id: filter_html
     provider: filter
     status: true
     weight: -10
-    settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: true
-    weight: 0
     settings:
-      filter_url_length: 72
-  filter_autop:
-    id: filter_autop
-    provider: filter
-    status: true
-    weight: 0
-    settings: {  }
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type=''1 A I''> <li> <dl> <dt> <dd> <h2 id=''jump-*''> <h3 id> <h4 id> <h5 id> <h6 id>'
+      filter_html_help: true
+      filter_html_nofollow: false

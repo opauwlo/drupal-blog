@@ -1,4 +1,4 @@
-uuid: dab24ad7-388f-4656-8e69-5850d67edde0
+uuid: 113f6575-fbf0-493f-b5bd-4217167fc2c9
 langcode: en
 status: false
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: opauwlo_secondary_local_tasks
 theme: opauwlo
 region: menu
-weight: -1
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

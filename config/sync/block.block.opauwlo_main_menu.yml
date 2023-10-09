@@ -1,4 +1,4 @@
-uuid: 06b45693-0baa-4fb5-8316-11eb344f6699
+uuid: 45d95cc7-7c1b-4213-a5f8-6f42af1d9bed
 langcode: en
 status: false
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: opauwlo_main_menu
 theme: opauwlo
 region: menu
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:

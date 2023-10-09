@@ -1,0 +1,6 @@
+settings:
+  node:
+    article:
+      field_comments:
+        'on': 1
+        text: ''

@@ -1,6 +1,6 @@
-uuid: 37a353f8-f61f-4d07-bc9d-797f0f15782f
+uuid: 2c563deb-d330-4251-b4f0-30d3bba54eba
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: opauwlo_breadcrumbs
 theme: opauwlo
-region: menu
-weight: 0
+region: navigation
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

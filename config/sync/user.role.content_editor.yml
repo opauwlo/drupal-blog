@@ -1,15 +1,18 @@
-uuid: 697e75c6-a33e-43da-be55-c4a59f5b39b1
+uuid: 84f02eba-ffae-4797-bced-8375f5b02fca
 langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - node.type.article
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
+    - eu_cookie_compliance
     - file
+    - filter
     - node
     - path
     - system
@@ -38,11 +41,13 @@ permissions:
   - 'delete own article content'
   - 'delete own page content'
   - 'delete page revisions'
+  - 'display eu cookie compliance popup'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'use text format basic_html'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'

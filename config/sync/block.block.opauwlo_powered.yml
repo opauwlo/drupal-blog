@@ -1,4 +1,4 @@
-uuid: e3d15904-1215-4a28-82c4-f1b3de6060bc
+uuid: 4cc56070-c3f5-453b-8253-f4c46f41f18b
 langcode: en
 status: false
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: opauwlo_powered
 theme: opauwlo
-region: menu
-weight: 2
+region: footer_first
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:

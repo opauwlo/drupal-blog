@@ -1,4 +1,4 @@
-uuid: 6238c3d7-58cb-4bde-b546-41071aea9534
+uuid: fa1d3818-322d-41e4-8d7d-0665cd7738cb
 langcode: en
 status: false
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: opauwlo_page_title
 theme: opauwlo
 region: menu
-weight: -6
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

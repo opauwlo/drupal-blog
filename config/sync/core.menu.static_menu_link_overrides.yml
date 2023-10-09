@@ -2,8 +2,20 @@ _core:
   default_config_hash: CXhei_vpaZk-3f_Mj2cH0YmpK-ZpKHoSzVA3yZrDq0g
 definitions:
   contact__site_page:
+    weight: -47
     menu_name: footer
     parent: ''
-    weight: 0
+    enabled: false
+    expanded: false
+  user__page:
+    weight: -49
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+  user__logout:
+    weight: -48
+    menu_name: account
+    parent: ''
     expanded: false
     enabled: true
